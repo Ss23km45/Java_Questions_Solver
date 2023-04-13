@@ -1,9 +1,12 @@
 package org.example.oops.practice.comparision;
 
+import org.w3c.dom.Node;
+
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.LinkedList;
 
-public class Main { 
+public class Main {
     public static void main(String[] args) {
         Student mukesh = new Student(23,88.432f);
         Student kedar = new Student(22, 89.64f);
@@ -16,6 +19,8 @@ public class Main {
                 mukesh,kedar, amma, nanna, random1, random
         };
         System.out.println(Arrays.toString(students));
+
+        LinkedList linkedList = new LinkedList();
 
 
         //Using Comparator here in main method

@@ -8,8 +8,8 @@ public class SingleLinkedList {
 
     public void insertAtTheStart(int value){
         Node node = new Node(value);
-        node.next = head;
-        head = node;
+        node.next = head;  //Here Head is Defaulty null so foe the first Object we are assiging to null
+        head = node; //Here Head value will become node
 
         if(tail == null){
             tail = head;
