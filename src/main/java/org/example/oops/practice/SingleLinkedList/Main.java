@@ -2,7 +2,7 @@ package org.example.oops.practice.SingleLinkedList;
 
 public class Main {
     public static void main(String[] args) {
-        SingleLinkedList single = new SingleLinkedList();
+        /*SingleLinkedList single = new SingleLinkedList();
         single.insertAtTheStart(23);
         single.insertAtTheStart(33);
         single.insertAtTheStart(43);
@@ -29,7 +29,16 @@ public class Main {
         //single2.deleteLastNode();
         single2.delete(4);
         System.out.println();
-        single2.display();
+        single2.display(); */
+
+
+        //SingleLinkedList SL2 = new SingleLinkedList();
+        //SL2.inserRec(0,2);
+        //SL2.inserRec(1,5);
+        //SL2.inserRec(2,4);
+        //SL2.inserRec(3,8);
+
+        //SL2.display();
 
 
     }

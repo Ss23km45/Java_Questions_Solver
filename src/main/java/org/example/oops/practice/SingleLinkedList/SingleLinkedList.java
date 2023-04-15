@@ -112,6 +112,38 @@ public class SingleLinkedList {
         System.out.print("END");
     }
 
+    //Recusrion using LinkedList
+
+    public void inserRec(int index, int Value){
+        Node node = new Node(Value);
+        Node temp = null;
+        if(index ==0){
+            node.next = head;
+            head = node;
+            return;
+        }
+        temp = head;
+
+        //Node temp = head;
+
+        inserRec(index, Value, temp);
+    }
+
+    private void inserRec(int index, int value, Node temp) {
+        if(index == 0){
+            Node node = new Node(value);
+            node.next = temp.next.next;
+            temp.next = node;
+        }
+        else if(temp == null){
+            System.out.println("Cannot Insert at the index which you gave ");
+            return;
+        }
+        else{
+            inserRec(index-1, value, temp.next);
+        }
+    }
+
     private class Node{
        private int value;
        private Node next;
