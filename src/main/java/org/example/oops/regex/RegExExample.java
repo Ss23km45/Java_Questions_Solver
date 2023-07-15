@@ -14,7 +14,7 @@ public class RegExExample {
         PrintWriter pw = new PrintWriter("E:/Movies/input.txt") ;
         FileReader fr = new FileReader("E:/Movies/output.txt");
         BufferedReader br = new BufferedReader(fr);
-        Pattern p = Pattern.compile("(0|91)?[6-9][0-9]{9}");
+        Pattern p = Pattern.compile("((0|91)?[6-9][0-9]{9}|[a-zA-Z][a-zA-Z0-9_]*@[a-zA-Z]+.[[a-zA-Z.]+]*)");
         String line = br.readLine();
 
         while(line != null){
