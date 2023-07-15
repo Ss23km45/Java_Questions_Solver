@@ -10,7 +10,7 @@ public class TerminalMethods {
     public static void main(String[] args) {
         List<Integer> list = Arrays.asList(12,42,43,65,76,55,32,65);
         //Implementing Min and Max Values
-        Optional<Integer>val = list.stream()
+        Optional<Integer> val = list.stream()
                 .distinct()
                 .min((a,b) -> a.compareTo(b));
         System.out.println(val.get());
